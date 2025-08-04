@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: fastapi-backend
+    env: python
+    buildCommand: ""
+    startCommand: uvicorn server:app --host 0.0.0.0 --port 10000
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: REACT_APP_API_URL
+        value: https://fastapi-backend.onrender.com
