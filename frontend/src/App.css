@@ -1,0 +1,307 @@
+/* Neon theme styles for KYIV Quest */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Orbitron', monospace;
+}
+
+body {
+  background: #111827;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Neon text effects */
+.neon-text-blue {
+  color: #60a5fa;
+  text-shadow: 
+    0 0 5px #60a5fa,
+    0 0 10px #60a5fa,
+    0 0 15px #60a5fa,
+    0 0 20px #60a5fa;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.neon-text-purple {
+  color: #a855f7;
+  text-shadow: 
+    0 0 5px #a855f7,
+    0 0 10px #a855f7,
+    0 0 15px #a855f7,
+    0 0 20px #a855f7;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.neon-text-pink {
+  color: #f472b6;
+  text-shadow: 
+    0 0 5px #f472b6,
+    0 0 10px #f472b6,
+    0 0 15px #f472b6,
+    0 0 20px #f472b6;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.neon-text-green {
+  color: #22c55e;
+  text-shadow: 
+    0 0 5px #22c55e,
+    0 0 10px #22c55e,
+    0 0 15px #22c55e,
+    0 0 20px #22c55e;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.neon-text-red {
+  color: #ef4444;
+  text-shadow: 
+    0 0 5px #ef4444,
+    0 0 10px #ef4444,
+    0 0 15px #ef4444,
+    0 0 20px #ef4444;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+/* Neon buttons */
+.neon-button-blue {
+  background: linear-gradient(45deg, #1e40af, #3b82f6);
+  border: 2px solid #60a5fa;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 
+    0 0 10px #60a5fa,
+    inset 0 0 10px rgba(96, 165, 250, 0.1);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #60a5fa;
+}
+
+.neon-button-blue:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 20px #60a5fa,
+    0 5px 15px rgba(96, 165, 250, 0.3),
+    inset 0 0 20px rgba(96, 165, 250, 0.2);
+  border-color: #93c5fd;
+}
+
+.neon-button-purple {
+  background: linear-gradient(45deg, #7c3aed, #a855f7);
+  border: 2px solid #a855f7;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 
+    0 0 10px #a855f7,
+    inset 0 0 10px rgba(168, 85, 247, 0.1);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #a855f7;
+}
+
+.neon-button-purple:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 20px #a855f7,
+    0 5px 15px rgba(168, 85, 247, 0.3),
+    inset 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.neon-button-pink {
+  background: linear-gradient(45deg, #ec4899, #f472b6);
+  border: 2px solid #f472b6;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 
+    0 0 10px #f472b6,
+    inset 0 0 10px rgba(244, 114, 182, 0.1);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #f472b6;
+}
+
+.neon-button-pink:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 20px #f472b6,
+    0 5px 15px rgba(244, 114, 182, 0.3),
+    inset 0 0 20px rgba(244, 114, 182, 0.2);
+}
+
+.neon-button-selected {
+  background: linear-gradient(45deg, #059669, #10b981);
+  border: 2px solid #34d399;
+  color: white;
+  font-weight: bold;
+  box-shadow: 
+    0 0 15px #34d399,
+    inset 0 0 15px rgba(52, 211, 153, 0.2);
+  text-shadow: 0 0 5px #34d399;
+}
+
+/* Neon boxes */
+.neon-box {
+  background: rgba(17, 24, 39, 0.8);
+  border: 2px solid #4f46e5;
+  border-radius: 12px;
+  box-shadow: 
+    0 0 20px rgba(79, 70, 229, 0.3),
+    inset 0 0 20px rgba(79, 70, 229, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.neon-box-subtle {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid #6b7280;
+  border-radius: 8px;
+  box-shadow: 
+    0 0 10px rgba(107, 114, 128, 0.2),
+    inset 0 0 10px rgba(107, 114, 128, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+/* Neon inputs */
+.neon-input {
+  background: rgba(17, 24, 39, 0.8);
+  border: 2px solid #4b5563;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.neon-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 
+    0 0 10px #60a5fa,
+    inset 0 0 10px rgba(96, 165, 250, 0.1);
+}
+
+/* Neon progress bar */
+.neon-progress {
+  background: linear-gradient(90deg, #60a5fa, #a855f7, #f472b6, #34d399);
+  background-size: 200% 100%;
+  animation: gradient-flow 3s ease infinite;
+  box-shadow: 
+    0 0 10px #60a5fa,
+    0 0 20px rgba(96, 165, 250, 0.3);
+}
+
+/* Animations */
+@keyframes pulse {
+  from {
+    text-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor,
+      0 0 20px currentColor;
+  }
+  to {
+    text-shadow: 
+      0 0 2px currentColor,
+      0 0 5px currentColor,
+      0 0 8px currentColor,
+      0 0 12px currentColor;
+  }
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor;
+  }
+  50% {
+    box-shadow: 
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor;
+  }
+}
+
+/* Shake animation for wrong answers */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .neon-text-blue {
+    font-size: 1.8rem;
+  }
+  
+  .neon-box {
+    margin: 0.5rem;
+  }
+  
+  .neon-button-blue,
+  .neon-button-purple,
+  .neon-button-pink {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #60a5fa, #a855f7);
+  border-radius: 4px;
+  box-shadow: 0 0 5px #60a5fa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #93c5fd, #c084fc);
+}
+
+/* Additional neon effects */
+.neon-box:hover {
+  border-color: #6366f1;
+  box-shadow: 
+    0 0 25px rgba(99, 102, 241, 0.4),
+    inset 0 0 25px rgba(99, 102, 241, 0.15);
+}
+
+/* QR Code glow effect */
+.neon-glow {
+  box-shadow: 
+    0 0 10px #60a5fa,
+    0 0 20px rgba(96, 165, 250, 0.3),
+    0 0 30px rgba(96, 165, 250, 0.2);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Button pressed state */
+.neon-button-blue:active,
+.neon-button-purple:active,
+.neon-button-pink:active {
+  transform: translateY(1px);
+  box-shadow: 
+    0 0 10px currentColor,
+    inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
